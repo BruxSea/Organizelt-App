@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Organizelt</title>
 </head>
 <body>
     <div class="container">
         <!-- Greeting message -->
-            <p>Hello!</p>
+            <p class="greeting">Hello!</p>
     
             <!-- Categories section with buttons -->
             <div class="categories">
                 <button>All</button>
-                <button>Plan for today</button>
                 <button>Important</button>
                 <button>Gym Routine</button>
+                <button>Books to Read for Self-Improvement</button>
+                <button>Plan for today</button>
                 <button>Buy</button>
             </div>
 
@@ -25,29 +27,39 @@
             <!-- Notes Container -->
             <div class="notes-container">
                 <!-- First Note -->
-                <div class="note">
-                    <p class="name-note">Note</p>
-                    <p class="date-note">Date</p>
+                <div class="note first-note">
+                  <div class="note-content">  
+                    <h3 class="note-name">My Note</h3>
+                    <p class="note-date">Last modified: <span class="modification-date">25-06-2024</span></p>
+                  </div>  
                     <button class="note-button" aria-label="Open note">></button>
                 </div>
                 <!-- Second Note-->
-                <div class="note">
-                    <p class="name-note">Note</p>
-                    <p class="date-note">Date</p>
+                <div class="note second-note">
+                  <div class="note-content">  
+                    <h3 class="note-name">Note</h3>
+                    <p class="note-date">Last modified: <span class="modification-date">01-06-1995</span></p>
+                  </div>  
                     <button class="note-button" aria-label="Open note">></button>
                 </div>
                 <!-- Third Note -->
-                <div class="note">
-                    <p class="name-note">Note</p>
-                    <p class="date-note">Date</p>
+                <div class="note third-note">
+                  <div class="note-content">  
+                    <h3 class="note-name">Note</h3>
+                    <p class="note-date">Last modified: <span class="modification-date">01-03-2021</span></p>
+                  </div>  
                     <button class="note-button" aria-label="Open note">></button>
                 </div>
+
+                <!-- Button to add a new note -->
+                <button class="add-note" aria-label="Add new note">+</button>
             </div>
 
-            <!-- Button to add a new note -->
-            <button class="add-note" aria-label="Add new note">+</button>
+            
 
             
     </div>
+
+  <script src="script.js" defer></script>  
 </body>
 </html>
